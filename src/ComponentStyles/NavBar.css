@@ -1,0 +1,102 @@
+.main_nav{
+  width: 20%;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #0a1a44;
+}
+
+.lol{
+    font-size: 5rem;
+    color: white;
+    margin: 12% 0 auto;
+}
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+  }
+  .profile_name{
+      margin-bottom: 8%;
+  }
+.badges {
+    width: 78%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+
+  
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    font-size: 1rem;
+  }
+
+  .tab_class {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .tabs_icons {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2%;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  .lala{
+      color: white;
+  }
+
+  .tabs_icons:hover{
+      color: #0a1a44;
+      background-color: white;
+      border-radius: 25px;
+  }
+
+  
+  .other {
+    width: 74%;
+  }
+  
+  .cate{
+    display: flex;
+    color: white;
+    margin-top: 10%;
+  }
+
+  
+  .categories_name{
+    font-size: 1.5rem;
+    color: white;
+    list-style-type: none;
+  }
+
+    .catrory_ul{
+        width: 68%;
+    }
+    .categoies {
+        display: flex;
+        justify-content: center;
+        margin: 12% 0;
+    }
+
+    li.cate > * {
+        color: white;
+    }
