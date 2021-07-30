@@ -19,7 +19,7 @@ export default function Dashboard() {
                 </div>
                 <div className='second_row'>
                     {nums.map(index => 
-                        <FeatureCards key = {index} text={text[index]} widgets={widgets[index]}/>
+                        <FeatureCards key= {index} text={text[index]} widgets={widgets[index]}/>
                     )}
                 </div>
             </div>
