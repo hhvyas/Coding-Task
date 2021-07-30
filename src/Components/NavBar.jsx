@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import '../ComponentStyles/NavBar.css'
 
 export default function NavBar() {
@@ -20,16 +20,16 @@ export default function NavBar() {
                 </div>
                 <div className='tabs'>
                         <div className='tab_class'>
-                            <NavLink to='/dashboard' className='tabs_icons'><i class="material-icons">grid_view</i><span className='other'>Dashboard</span></NavLink>
+                            <Link to='#' className='tabs_icons'><i class="material-icons">grid_view</i><span className='other'>Dashboard</span></Link>
                         </div>
                         <div className='tab_class'>
-                            <NavLink to='/profile' className='tabs_icons'><i class="material-icons">person</i><span className='other'>Profile</span></NavLink>
+                            <Link to='#' className='tabs_icons'><i class="material-icons">person</i><span className='other'>Profile</span></Link>
                         </div>
                         <div className='tab_class'>
-                            <NavLink to='/events' className='tabs_icons'><i class="material-icons">event</i><span className='other'>Event</span></NavLink>
+                            <Link to='#' className='tabs_icons'><i class="material-icons">event</i><span className='other'>Event</span></Link>
                         </div>
                         <div className='tab_class'>
-                            <NavLink to='/practice' className='tabs_icons'><i class="material-icons">code</i><span className='other'>Practice</span></NavLink>
+                            <Link to='#' className='tabs_icons'><i class="material-icons">code</i><span className='other'>Practice</span></Link>
                         </div>
                 </div>
                 <div className='categoies'>

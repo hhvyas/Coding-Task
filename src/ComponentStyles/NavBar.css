@@ -64,12 +64,12 @@
       color: white;
   }
 
-  .tabs_icons:hover, .active{
+  .tabs_icons:hover{
       color: #0a1a44;
       background-color: white;
       border-radius: 25px;
   }
-  
+
   
   .other {
     width: 74%;
