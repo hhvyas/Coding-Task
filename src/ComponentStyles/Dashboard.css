@@ -34,9 +34,6 @@
   flex-direction: column;
 }
 
-
-/* Inline #3 | http://localhost:3000/dashboard */
-
 .second_row {
   height: 25%;
   justify-content: space-around;
