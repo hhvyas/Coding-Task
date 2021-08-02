@@ -3,7 +3,7 @@ import '../ComponentStyles/Registration.css'
 import Signin from './Signin';
 import App from '../App'
 import CheckPassword from '../CheckPassword';
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 export default function Registration(){
     //let history = useHistory();
@@ -11,6 +11,7 @@ export default function Registration(){
     const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
     const [ShowPassword, setShowPassword] = useState(false)
+    const [isSubmit, setSubmit] = useState(false);
 
     const handleChangeU = (e) => {
         setUsername(e.target.value);
@@ -26,13 +27,16 @@ export default function Registration(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setSubmit(!isSubmit);
     }
 
     const handleChangeI = (e) => {
         e.preventDefault();
         setShowPassword(!ShowPassword);
     }
-
+    if (isSubmit) {
+        return <Redirect to="/dashboard" />;
+      }
     return (
         <div className='main'>
         <div className='left_card'>
@@ -41,14 +45,14 @@ export default function Registration(){
                 <label>USER NAME
                 <div className='border'>
                     <input type="text" onChange={(e) => handleChangeU(e)} value={Username} required/>
-                    <i class="material-icons">person</i>
+                    <i className="material-icons">person</i>
                 </div>
                 </label>
                 
                 <label>EMAIL ADDRESS
                     <div className='border'>
                         <input type="email" onChange={handleChangeE} onClick={(e) => e.preventDefault()} value={Email} required/>
-                        <i class="material-icons">email</i>
+                        <i className="material-icons">email</i>
                     </div>
                 </label>
                 
@@ -56,7 +60,7 @@ export default function Registration(){
                 <label id='ok'>CHOOSE PASSWORD
                 <div className='border'>
                     <input type={ShowPassword === true ? 'text' : 'password'} onChange={handleChangeP} value={Password} required/>
-                    <i class="material-icons" onClick={handleChangeI}>visibility</i>
+                    <i className="material-icons" onClick={handleChangeI}>visibility</i>
                 </div>
                 </label>
 
