@@ -3,6 +3,135 @@
     padding: 0;
 }
 
-.dashboard_container {
+.left_card {
+  height: 100%;
+  border-right: 1px solid grey;
   display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 40%;
+  margin: 5% 0 2% 5%;
+}
+.get_started_h1 {
+  margin-bottom: 8%;
+}
+input {
+  width: 80%;
+  border: 0;
+}
+input:active{
+  border: none;
+}
+.border {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 5% 0;
+  border-bottom: 2px solid gray;
+}
+.borderpsw {
+  display: flex;
+  margin: 5% 0;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.Weak, .Moderate, .Strong {
+  width: 65%;
+  height: 0px;
+  margin-top: 1.8%;
+  border-radius: 25px;
+}
+
+.submitButton {
+  height: 12%;
+  color: white;
+  background-color: #0a1a44;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
+}
+
+.form_footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+/* Right Card */
+
+.right_card {
+  margin: 5% 0 2% 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hihi {
+  width: 50%;
+  height: 20%;
+}
+
+.okok{
+  background-image: url('../Images/register1.png');
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.register-image {
+  width: 60%;
+  height: 100%;
+  margin-top: 10%;
+}
+label {
+  color: gray;
+}
+
+/* Sign In Starts */
+
+.submitButtonLogin{
+  height: 20%;
+  background-color: #0a1a44;
+  color: white;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
+}
+
+.forPass {
+  width: 80%;
+  display:  flex;
+  justify-content: flex-end;
+  margin-bottom: 5%;
+
+}
+
+.okoks{
+  background-image: url('../Images/login2.png');
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.left_card_sign{
+    height: 100%;
+    border-right: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 40%;
+    margin: 8% 0 2% 8%;
+}
+
+.right_card_sign {
+  margin: 8% 0 2% 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }

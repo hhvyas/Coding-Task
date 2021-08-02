@@ -33,4 +33,13 @@
   }
 
   
-  
+  .events {
+    width: 100%;
+  }
+
+
+/* Element | http://localhost:3000/events */
+
+#root > div:nth-child(1) {
+  display: flex;
+}

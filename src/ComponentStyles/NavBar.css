@@ -46,6 +46,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 2% 0;
   }
 
 
@@ -99,4 +100,10 @@
 
     li.cate > * {
         color: white;
+    }
+
+    .active {
+      background-color: white;
+      color: #0a1a44;
+      border-radius: 25px;
     }

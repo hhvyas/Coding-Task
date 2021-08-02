@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useNavigate  } from 'react';
 import '../ComponentStyles/Registration.css'
 import Signin from './Signin';
 import App from '../App'
@@ -6,7 +6,7 @@ import CheckPassword from '../CheckPassword';
 import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 
 export default function Registration(){
-
+    //let history = useHistory();
     const [Username, setUsername] = useState("")
     const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
@@ -28,7 +28,8 @@ export default function Registration(){
         e.preventDefault();
     }
 
-    const handleChangeI = () => {
+    const handleChangeI = (e) => {
+        e.preventDefault();
         setShowPassword(!ShowPassword);
     }
 
@@ -39,21 +40,21 @@ export default function Registration(){
             <form onSubmit={handleSubmit}>
                 <label>USER NAME
                 <div className='border'>
-                    <input type="text" onChange={handleChangeU} value={Username} required/>
+                    <input type="text" onChange={(e) => handleChangeU(e)} value={Username} required/>
                     <i class="material-icons">person</i>
                 </div>
                 </label>
                 
                 <label>EMAIL ADDRESS
                     <div className='border'>
-                        <input type="email" onChange={handleChangeE} value={Email} required/>
+                        <input type="email" onChange={handleChangeE} onClick={(e) => e.preventDefault()} value={Email} required/>
                         <i class="material-icons">email</i>
                     </div>
                 </label>
                 
                 
                 <label id='ok'>CHOOSE PASSWORD
-                <div className='borderPswd'>
+                <div className='border'>
                     <input type={ShowPassword === true ? 'text' : 'password'} onChange={handleChangeP} value={Password} required/>
                     <i class="material-icons" onClick={handleChangeI}>visibility</i>
                 </div>
@@ -64,9 +65,7 @@ export default function Registration(){
                 <input className='submitButton' type='submit' value='Create Account' />
                 <div className='form_footer'>
                     <p>Already a member?</p>
-                    <Router>
-                        <Link>Sign in</Link>
-                        </Router>
+                        <Link to='/login'>Sign in</Link>
                 </div>
             </form>
         </div>
