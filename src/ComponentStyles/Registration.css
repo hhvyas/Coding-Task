@@ -48,7 +48,7 @@ input:active{
 }
 
 .submitButton {
-  height: 12%;
+  height: 50px;
   color: white;
   background-color: #0a1a44;
   margin-bottom: 5%;
@@ -95,7 +95,7 @@ label {
 /* Sign In Starts */
 
 .submitButtonLogin{
-  height: 20%;
+  height: 50px;
   background-color: #0a1a44;
   color: white;
   margin-bottom: 5%;
