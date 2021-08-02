@@ -1,0 +1,23 @@
+
+.third_row {
+    display: flex;
+    height: 45%;
+  }
+  .big_feaure_cards {
+    width: 30%;
+    padding: 1.5%;
+    border: 1px solid black;
+    margin-left: 2%;
+    display: flex;
+    box-shadow: 2px 2px grey;
+  }
+  
+
+.text_number_big{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 10%;
+    border-bottom: 1px solid grey;
+  }
+  
